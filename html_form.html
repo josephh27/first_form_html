@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic HTML Form</title>
+    </head>
+    <body>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name:</label>
+                <input name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="1" max="150" step="1">
+            </div>
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" max="2005-01-18">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input name="password" id="password" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone number" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            <div>
+                <label for="eyeColor">Eye Color</label>
+                <select name="eye color" id="eyeColor">
+                    <option value="Green">Green</option>
+                    <option value="Red">Red</option>
+                    <option value="Black">Black</option> 
+                </select>
+            </div>
+            <div>
+                Favorite Games
+                <div>
+                    <label for="LoL">League of Legends</label>
+                    <input type="checkbox" name="League of Legends" id="LoL">
+                </div>
+                <div>
+                    <label for="ML">Mobile Legends</label>
+                    <input type="checkbox" name="Mobile Legends" id="ML">
+                </div>
+            </div>
+            <div>
+                <label for="file">File</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="html_form.js"></script>
+    </body>
+</html>
+
+
